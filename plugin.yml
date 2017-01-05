@@ -1,0 +1,5 @@
+main: com.pphelix.polargalaxy.emojix.EmojiX
+name: EmojiX
+version: 0.1
+author: Pphelix
+description: A UTC-8 format Emoji plugin
