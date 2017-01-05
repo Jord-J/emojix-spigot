@@ -1,8 +1,9 @@
 # EmojiX
 
-[![Latest release](https://img.shields.io/github/release/polargalaxymc/emojix.svg?style=flat-square)](https://github.com/polargalaxymc/emojix/releases) [![Join our Discord](https://img.shields.io/badge/discord-join%20chat-7289DA.svg?style=flat-square)](https://polargalaxy.com/discord) [![Support us by donating](https://img.shields.io/badge/support_us-donate-orangered.svg?style=flat-square)](https://polargalaxy.com/support) [![Follow our Twitter](https://img.shields.io/twitter/follow/polargalaxymc.svg?style=flat-square&label=twitter updates)](https://twitter.com/polargalaxymc)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc7c803fb0694d278ca9b3929c68e4fb)](https://www.codacy.com/app/pphelix/emojix?utm_source=github.com&utm_medium=referral&utm_content=PolarGalaxyMC/emojix&utm_campaign=badger)
+[![Latest release](https://img.shields.io/github/release/polargalaxymc/emojix.svg?style=flat-square)](https://github.com/polargalaxymc/emojix/releases) [![Codacy grade](https://img.shields.io/codacy/grade/66dd4f732f9d4fd786107fac8d0d78d3.svg?style=flat-square)](https://www.codacy.com/app/git_19/emojix?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PolarGalaxyMC/emojix&amp;utm_campaign=Badge_Grade) [![Coverage](https://img.shields.io/codacy/coverage/66dd4f732f9d4fd786107fac8d0d78d3.svg?style=flat-square)](https://www.codacy.com/app/git_19/emojix?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PolarGalaxyMC/emojix&amp;utm_campaign=Badge_Grade) [![Join our Discord](https://img.shields.io/badge/discord-join%20chat-7289DA.svg?style=flat-square)](https://polargalaxy.com/discord) [![Support us by donating](https://img.shields.io/badge/support_us-donate-yellow.svg?style=flat-square)](https://polargalaxy.com/support) [![Follow our Twitter](https://img.shields.io/twitter/follow/polargalaxymc.svg?style=flat-square&label=twitter updates)](https://twitter.com/polargalaxymc)
 
-This Spigot 1.11.2 plugin for Minecraft adds Minecraft-compliant UTF-8 emoji to chat and signs without all the issues that other plugins such as [Minemojis](https://www.spigotmc.org/resources/minemojis.15969/) bring.
+This Spigot-based 1.11.2 Minecraft plugin adds Minecraft-compliant UTF-8 emoji to chat and signs without all the issues that other plugins such as [Minemojis](https://www.spigotmc.org/resources/minemojis.15969/) bring.
 
 EmojiX fixes architectural flaws that you may encounter with other solutions: links get recognized as emoji, emoji in colored chat are tinted, and you are forced to use a resource pack because the emoji are merely Chinese characters that are indescribable outside of the game.
 
@@ -19,28 +20,13 @@ Keep in mind that this project is still a work in progress!
 + You don’t need any resource packs
 + Simple drop-in style installation
 
-## Installation
+## Install & configure
 
 Check the [releases page for compiled builds](https://github.com/PolarGalaxyMC/emojix/releases).
 
 Drop the compiled plugin into your `/plugins/` directory, restart the server, and you are done. From there on, a configuration file should be generated for further changes.
 
-## Permissions
-
-Use /emojix or /emojix help
-`emojix.help`
-
-Use all emoji in chat
-`emojix.chat.*`
-
-Use specific emoji in chat
-`emojix.chat.heart`
-
-Use all emoji on signs
-`emojix.signs.*`
-
-Use specific emoji on signs
-`emojix.signs.heart`
+See the permission nodes and learn more on [our wiki](https://github.com/polargalaxymc/emojix/wiki).
 
 ## Development & support
 
