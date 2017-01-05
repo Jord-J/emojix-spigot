@@ -31,11 +31,6 @@ public class ChatEvent implements Listener {
 			// This loop allows detection for Emotes mixed with words and also eliminates Emotes appearing in URL's - Emotes must have a space on both sides if applicable
 			for( String word : words ) {
 				
-				if( word.contains( "ChatColor" ) ) {
-					String[] split = word.split( "ChatColor." );
-					word = split[1];
-				}
-				
 				if( word.toString().equals( obj.toString() ) ) {
 					message = message.replace( obj.toString(), ChatColor.WHITE + EmojiConfig.emoji.getString( "emoji." + obj.toString() ) + oldColor );
 				}
