@@ -1,5 +1,5 @@
-main: com.pphelix.polargalaxy.emojix.EmojiX
+main: com.polargalaxy.EmojiX
 name: EmojiX
-version: 0.1
-author: Pphelix
-description: A UTC-8 format Emoji plugin
+version: 1.0
+author: pphelix, published via polargalaxy.com
+description: Refined Minecraft-compliant UTF-8 emoji for chat and signs with link escaping and no discoloration

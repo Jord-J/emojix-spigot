@@ -1,3 +1,41 @@
 emoji:
-    ":heart:": "❤"
-    ":note:": "♫"
+    # Emotions
+    ":(": "☹️"
+    ":)": "😄"
+    "8)": "😎️"
+
+    "<3": "❤"
+    ":victory:": "✌"
+
+    # Things, objects
+    ":drink:": "☕"
+    ":umbrella2:": "☂"
+    ":umbrella:": "☔"
+    ":plane:": "✈"
+    ":radioactive:": "✇"
+    ":scissors:": "✂"
+    ":phone:": "✆"
+    ":pen:": "✎"
+    ":flag2:": "⚐"
+    ":flag:": "⚑"
+
+    # Weather
+    ":sun:": "☀"
+
+    # Signs
+    ":yes:": "✔"
+    ":no:": "✘"
+    ":star:": "✫"
+    ":star_round:": "✪"
+
+    ":dust:": "✦"
+    ":dust2:": "✧"
+
+    ":handicapped:": "♿"
+    ":cross:": "✞"
+
+    # Other
+    ":music:": "♫"
+    ":bolt:": "⚡"
+    ":recycling:": "♻"
+    ":mail:": "✉"
