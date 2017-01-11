@@ -35,32 +35,16 @@ public class ChatEvent implements Listener {
 
 				// This is to allow the first word to be an Emoji should users
 				// use an Emoji at the start
-				if (word == words[0]) {
+				if( word == words[0])
 					word = ChatColor.stripColor(word);
-					if (word.equals(obj.toString())) {
-						if (player.hasPermission("emojix.chat." + word)) {
-							message = message.replace(obj.toString(), ChatColor.WHITE
-									+ EmojiConfig.emoji.getString("emoji." + obj.toString()) + oldColor);
-							continue;
-						} else if (player.hasPermission("emojix.chat.*")) {
-							message = message.replace(obj.toString(), ChatColor.WHITE
-									+ EmojiConfig.emoji.getString("emoji." + obj.toString()) + oldColor);
-							continue;
-						} else {
-							continue;
-						}
-					}
-				}
 
 				if (word.equals(obj.toString())) {
 					if (player.hasPermission("emojix.chat." + word)) {
 						message = message.replace(obj.toString(),
 								ChatColor.WHITE + EmojiConfig.emoji.getString("emoji." + obj.toString()) + oldColor);
-						continue;
 					} else if (player.hasPermission("emojix.chat.*")) {
 						message = message.replace(obj.toString(),
 								ChatColor.WHITE + EmojiConfig.emoji.getString("emoji." + obj.toString()) + oldColor);
-						continue;
 					} else {
 						continue;
 					}

@@ -8,11 +8,11 @@ import com.pphelix.polargalaxy.emojix.EmojiX;
 
 public class EmojiConfig {
 
-	private static EmojiX plugin;
+	private EmojiX plugin;
 	public static YamlConfiguration emoji;
 
 	public EmojiConfig(EmojiX plugin) {
-		EmojiConfig.plugin = plugin;
+		this.plugin = plugin;
 
 		// Call loadConfig method - This is so we can access config for Plugin
 		// purposes
@@ -21,7 +21,6 @@ public class EmojiConfig {
 
 	private void loadConfig() {
 		try {
-
 			// If Plugin folder doesn't exist generate a new folder
 			if (!plugin.getDataFolder().exists())
 				plugin.getDataFolder().mkdirs();
