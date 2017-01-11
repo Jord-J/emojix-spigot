@@ -1,14 +1,8 @@
-main: com.pphelix.polargalaxy.emojix.EmojiX
 name: EmojiX
 version: 1.0
-author: Pphelix, published via polargalaxy.com
+author: PPhelix, published via polargalaxy.com
+authors: [CallMeMantas, raiansan]
 description: Refined Minecraft-compliant UTF-8 emoji for chat and signs with link escaping and no discoloration
 
-# ===========
-# Permissions
-# ===========
-permissions:
-    emojix.signs.*:
-        description: Gives access to all Emojis for signs
-    emojix.chat.*:
-        description: Gives access to all Emojis for chat
+main: com.pphelix.polargalaxy.emojix.EmojiX
+database: false
