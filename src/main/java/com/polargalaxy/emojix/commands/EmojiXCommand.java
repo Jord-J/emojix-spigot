@@ -13,11 +13,11 @@ import mkremins.fanciful.FancyMessage;
 
 public class EmojiXCommand implements CommandExecutor {
 
-	static EmojiX plugin;
+	public EmojiX plugin;
 	private HashMap<String, String> emojiHash = new HashMap<String, String>();
 
 	public EmojiXCommand(EmojiX plugin) {
-		EmojiXCommand.plugin = plugin;
+		this.plugin = plugin;
 	}
 
 	@Override

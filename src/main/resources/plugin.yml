@@ -6,9 +6,9 @@ description: Refined Minecraft-compliant UTF-8 emoji for chat and signs with lin
 main: com.polargalaxy.emojix.EmojiX
 database: false
 
-#============#
-#  Commands  #
-#============#
+# +----------------+
+# <    Commands    >
+# +----------------+
 
 commands:
   'EmojiX':
