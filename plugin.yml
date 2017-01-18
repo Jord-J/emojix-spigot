@@ -1,8 +1,0 @@
-name: EmojiX
-version: 1.0
-author: PPhelix, published via polargalaxy.com
-authors: [CallMeMantas, raiansan]
-description: Refined Minecraft-compliant UTF-8 emoji for chat and signs with link escaping and no discoloration
-
-main: com.pphelix.polargalaxy.emojix.EmojiX
-database: false

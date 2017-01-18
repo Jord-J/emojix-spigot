@@ -1,0 +1,51 @@
+# +------------------------------------------------------+
+# <    Main config - Visit: https://polargalaxy.com/     >
+# +------------------------------------------------------+
+
+# +---------------------+
+# <    Main messages    >
+# +---------------------+
+
+# Suffix - Plugin name 
+suffix:
+  color: "&9"
+
+# Hover - Hover message (displayed after plugin name once EmojiX command has been used)
+hover:
+  string: "[Hover for help]"
+  color: "&f"
+
+# Noemoji - Message to those who don't have access to any Emojis and have used the EmojiX command
+noemoji:
+  string: "You don't have any Emojis!"
+  color: "&c"
+
+# Nopermission - Message to those don't have access to use the EmojiX command
+nopermission:
+  string: "You don't have permission to use this command!"
+  color: "&c"
+
+# +-------------------------+
+# <    Tooltip messages    >
+# +-------------------------+
+# (tooltip: The content of the box that is generated on hover)
+
+# Tooltip-suffix - Description for suffix tooltip
+tt-suffix:
+  string: "EmojiX Plugin!"
+  color: "&a"
+
+# Tooltip-hover - Description for Hover tooltip
+tt-hover:
+  string: "Hover over an Emoji to view the syntax! \nYou can then type out the syntax in chat to use the Emote\n
+  or shift-click to auto-magically put it in chat!"
+  color: "&a"
+
+# Tooltip-noemoji - Description for no Emojis tooltip
+tt-noemoji:
+  string: "You can earn Emojis by playing the game!"
+  color: "&a"
+
+# Tooltip-emoji - The color of the tooltip which shows syntax for hovered emote
+tt-emoji:
+  color: "&7"

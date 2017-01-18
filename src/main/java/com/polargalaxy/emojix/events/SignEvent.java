@@ -1,4 +1,4 @@
-package com.pphelix.polargalaxy.emojix.events;
+package com.polargalaxy.emojix.events;
 
 import java.util.ArrayList;
 
@@ -9,13 +9,14 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.SignChangeEvent;
 
-import com.pphelix.polargalaxy.emojix.configs.EmojiConfig;
+import com.polargalaxy.emojix.configs.EmojiConfig;
 
 public class SignEvent implements Listener {
 
 	private ArrayList<String> colors = new ArrayList<String>();
 
-	@EventHandler(priority = EventPriority.HIGHEST)
+	// Make the event monitor priority
+	@EventHandler(priority = EventPriority.MONITOR)
 	public void onSignChange(SignChangeEvent event) {
 		String[] lines = event.getLines();
 		Player player = (Player) event.getPlayer();
