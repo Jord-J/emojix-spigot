@@ -3,7 +3,7 @@
 # +------------------------------------------------------+
 
 # Please refer to the Github Wiki for guidance: https://github.com/polargalaxymc/emojix/wiki
-# PS: Color Code format uses '&'
+# !---- Color Code format uses '&' ----!
 
 # +---------------------+
 # <    Main messages    >
@@ -23,7 +23,7 @@ noemoji:
   string: "You don't have any Emojis!"
   color: "&c"
 
-# Nopermission - Message to those don't have access to use the EmojiX command
+# Nopermission - Message to those who don't have access to use the EmojiX command
 nopermission:
   string: "You don't have permission to use this command!"
   color: "&c"

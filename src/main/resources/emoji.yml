@@ -1,5 +1,13 @@
-# Following format - Text : Emoji
+# +--------------+
+# <    Emojis    >
+# +--------------+
+
+# Please refer to the Github Wiki for guidance: https://github.com/polargalaxymc/emojix/wiki
+
+# +----------------------------------------------+
+# <    Format: "<chat text>" : "<emoji text>"    >
+# +----------------------------------------------+
 
 emoji:
     "<3": "❤"
-    ":smile:": "☻"
+    ":)": "☻"

@@ -71,7 +71,7 @@ public class EmojiXCommand implements CommandExecutor {
 								+ ChatColor.translateAlternateColorCodes('&',
 										AttributeConfig.config.getString("hover.color"))
 								+ AttributeConfig.config.getString("hover.string"))
-						.tooltip(net.md_5.bungee.api.ChatColor.translateAlternateColorCodes('&',
+						.tooltip(ChatColor.translateAlternateColorCodes('&',
 								AttributeConfig.config.getString("tt-hover.color"))
 								+ AttributeConfig.config.getString("tt-hover.string"));
 		header.send(sender);

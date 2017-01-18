@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.pphelix.polargalaxy</groupId>
+  <groupId>com.polargalaxy</groupId>
   <artifactId>emojix</artifactId>
   <version>1.0.0</version>
-  <name>Server Emoji</name>
-  <description>Awesome Spigot plugin that displays REAL emoji!</description>
+  <name>EmojiX</name>
+  <description>Refined Minecraft-compliant UTF-8 emoji for chat and signs with link escaping and no discoloration</description>
   <repositories>
     <repository>
       <id>stealthyone-repo</id>
