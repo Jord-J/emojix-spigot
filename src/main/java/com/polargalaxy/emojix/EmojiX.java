@@ -8,14 +8,14 @@ import com.polargalaxy.emojix.configs.EmojiConfig;
 import com.polargalaxy.emojix.events.ChatEvent;
 import com.polargalaxy.emojix.events.SignEvent;
 
-public class EmojiX extends JavaPlugin {
+public final class EmojiX extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
 		getServer().getPluginManager().registerEvents(new ChatEvent(), this);
 		getServer().getPluginManager().registerEvents(new SignEvent(), this);
 
-		getCommand("EmojiX").setExecutor(new EmojiXCommand(this));
+		getCommand("EmojiX").setExecutor(new EmojiXCommand());
 
 		new EmojiConfig(this);
 		new AttributeConfig(this);

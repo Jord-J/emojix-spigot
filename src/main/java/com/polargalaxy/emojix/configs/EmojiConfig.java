@@ -5,9 +5,9 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.polargalaxy.emojix.EmojiX;
 
-public class EmojiConfig {
+public final class EmojiConfig {
 
-	private EmojiX plugin;
+	private final EmojiX plugin;
 	public static YamlConfiguration emoji;
 
 	public EmojiConfig(EmojiX plugin) {
@@ -18,7 +18,7 @@ public class EmojiConfig {
 		loadConfig();
 	}
 
-	private void loadConfig() {
+	private final void loadConfig() {
 		// If Plugin folder doesn't exist generate a new folder
 		if (!plugin.getDataFolder().exists())
 			plugin.getDataFolder().mkdirs();

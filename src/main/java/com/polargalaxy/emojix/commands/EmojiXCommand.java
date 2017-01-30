@@ -5,23 +5,17 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import com.polargalaxy.emojix.EmojiX;
 import com.polargalaxy.emojix.configs.AttributeConfig;
 import com.polargalaxy.emojix.configs.EmojiConfig;
 
 import mkremins.fanciful.FancyMessage;
 
-public class EmojiXCommand implements CommandExecutor {
-
-	public EmojiX plugin;
-	private HashMap<String, String> emojiHash = new HashMap<String, String>();
-
-	public EmojiXCommand(EmojiX plugin) {
-		this.plugin = plugin;
-	}
+public final class EmojiXCommand implements CommandExecutor {
+	
+	private final HashMap<String, String> emojiHash = new HashMap<String, String>();
 
 	@Override
-	public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
+	public final boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 		// If command does not equal to 'EmojiX' then return
 		if (!cmd.getName().equalsIgnoreCase("EmojiX"))
 			return false;
@@ -69,11 +63,11 @@ public class EmojiXCommand implements CommandExecutor {
 										+ AttributeConfig.config.getString("tt-suffix.string")))
 						.then(" "
 								+ ChatColor.translateAlternateColorCodes('&',
-										AttributeConfig.config.getString("hover.color"))
-								+ AttributeConfig.config.getString("hover.string"))
+										AttributeConfig.config.getString("help.color"))
+								+ AttributeConfig.config.getString("help.string"))
 						.tooltip(ChatColor.translateAlternateColorCodes('&',
-								AttributeConfig.config.getString("tt-hover.color"))
-								+ AttributeConfig.config.getString("tt-hover.string"));
+								AttributeConfig.config.getString("tt-help.color"))
+								+ AttributeConfig.config.getString("tt-help.string"));
 		header.send(sender);
 		emojis.send(sender);
 		return true;
