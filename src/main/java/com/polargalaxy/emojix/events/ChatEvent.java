@@ -20,25 +20,23 @@ public final class ChatEvent implements Listener {
 		String[] words = message.split(" ");
 
 		// If player has colored prefix we obtain that color
-		String color = ChatColor.getLastColors(words[0].toString());
+		String color = ChatColor.getLastColors(words[0]);
 
 		/*
-		 * This loop allows detection for Emotes mixed with words and also
-		 * eliminates Emotes appearing in URL's - Emotes must have a space on
+		 * This loop allows detection for emotes mixed with words and also
+		 * eliminates emotes appearing in URL's - emotes must have a space on
 		 * both sides if applicable
 		 */
 		for (Object obj : EmojiConfig.emoji.getConfigurationSection("emoji").getKeys(false)) {
 			for (String word : words) {
 
-				// This is so the user can use an emoji singularly or at the
-				// start of line
+				// This is so the user can use an emoji singularly or at the start of line
 				if (word == words[0])
 					word = ChatColor.stripColor(word);
 
-				if (word.equals(obj.toString()))
-					if (player.hasPermission("emojix.chat." + word))
-						message = message.replace(word,
-								ChatColor.RESET + EmojiConfig.emoji.getString("emoji." + obj.toString()) + color);
+				if (word.equals(obj.toString()) && player.hasPermission("emojix.chat." + word))
+					message = message.replace(word,
+							ChatColor.RESET + EmojiConfig.emoji.getString("emoji." + obj.toString()) + color);
 			}
 		}
 

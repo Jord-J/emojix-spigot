@@ -32,19 +32,17 @@ public final class SignEvent implements Listener {
 				String[] words = lines[i].split(" ");
 
 				// If player has colored prefix we obtain that color
-				String color = ChatColor.getLastColors(words[0].toString());
+				String color = ChatColor.getLastColors(words[0]);
 
 				for (String word : words) {
 
-					// This is so the user can use an emoji singularly or at the
-					// start of line
+					// This is so the user can use an emoji singularly or at the start of line
 					if (word == words[0])
 						word = ChatColor.stripColor(word);
 
-					if (word.equals(obj.toString()))
-						if (player.hasPermission("emojix.chat." + word))
-							lines[i] = lines[i].replace(word,
-									ChatColor.RESET + EmojiConfig.emoji.getString("emoji." + obj.toString()) + color);
+					if (word.equals(obj.toString()) && player.hasPermission("emojix.chat." + word))
+						lines[i] = lines[i].replace(word,
+								ChatColor.RESET + EmojiConfig.emoji.getString("emoji." + obj.toString()) + color);
 				}
 
 				event.setLine(i, lines[i]);
